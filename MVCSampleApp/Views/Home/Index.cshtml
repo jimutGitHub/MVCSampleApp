@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Countries List</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @foreach( string countryName in ViewBag.Countries)
+            {
+                <li> @countryName </li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
